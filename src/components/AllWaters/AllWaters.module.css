@@ -72,6 +72,9 @@
 .AllWaters__regionButton:hover {
   color: rgb(143, 129, 230);
 }
+.AllWaters__regionButton:focus {
+  color: rgb(230, 7, 182);
+}
 .AllWaters__Allwaters {
   margin: 0 auto;
   width: 89.5%;

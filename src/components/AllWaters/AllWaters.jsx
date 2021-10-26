@@ -14,15 +14,20 @@ export const AllWaters = () => {
 
   const allWaters = useSelector((state) => state.waters);
   useEffect(() => {
-    setWaters(allWaters);
     dispatch({ type: ACTIONS.GET_WATERS });
+  }, []);
+
+  useEffect(() => {
+    setWaters(allWaters);
   }, [allWaters]);
+
   const [waters, setWaters] = useState(allWaters);
 
   const onFilter = (region) => {
     const newWaters = allWaters.filter((item) => item.region.includes(region));
     setWaters(newWaters);
   };
+
   const redirectToWater = (id) => {
     history.push(`/waters/${id}`);
   };
