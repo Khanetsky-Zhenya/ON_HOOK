@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ACTIONS } from "../../redux/constants";
 import styles from "./WaterPage.module.css";
@@ -10,7 +10,7 @@ export const WaterPage = () => {
   const currentWater = useSelector((state) => {
     return state.waters.find((water) => water.id === Number(id));
   });
-  console.log(currentWater)
+  console.log(currentWater);
 
   useEffect(() => {
     if (!currentWater) {
@@ -20,9 +20,18 @@ export const WaterPage = () => {
 
   return (
     <div className={styles.waterPage}>
-      <h2 className={styles.waterPage__title}>
-        ТУТ должна быть страница конкретного водоема с его описанием
-      </h2>
+      {currentWater ? (
+        <div className={styles.waterWrapper}>
+          <div>Название: {currentWater.name}</div>
+          <div>Краткое описание: {currentWater.shortDescription}</div>
+          <div>Площадь {currentWater.square}</div>
+          <div> Максимальная глубина {currentWater.depth}</div>
+          <div>Длина {currentWater.length}</div>
+          <div>Краткое описание: {currentWater.fullDescription}</div>
+        </div>
+      ) : (
+        <div>Идет загрузка водоема</div>
+      )}
     </div>
   );
 };
