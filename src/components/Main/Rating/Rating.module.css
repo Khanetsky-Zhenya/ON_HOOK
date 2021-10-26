@@ -1,0 +1,17 @@
+.Rating {
+  margin: 20px 0px 0px 0px;
+  padding: 10px;
+  background-color: rgb(100, 100, 100);
+}
+.Rating__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.Rating__name {
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  margin-top: 5px;
+  background-color: rgb(218, 243, 192);
+}

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Card {
+  display: flex;
+  width: 400px;
+  height: 130px;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 7px;
+}
+.Card__FullName {
+  display: flex;
+}
+.Card__avatar {
+  width: 80px;
+  height: 80px;
+  margin: 25px 20px 0 20px;
+}
+.Card__FullName {
+  margin-top: 12px;
+  margin-left: 35px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.Card__Name {
+  margin-right: 10px;
+}
+.Card__FishType {
+  font-style: italic;
+}
+.Card__Trophy {
+  margin-top: 5px;
+  font-style: italic;
+}
+.Card__TotalCatch {
+  margin-top: 5px;
+  font-style: italic;
+}
+span {
+  font-style: normal;
+}

@@ -1,0 +1,18 @@
+.mainInfo {
+  height: 85%;
+  display: flex;
+  justify-content: space-around;
+}
+.AllWater__button {
+  width: 220px;
+  height: 30px;
+  margin-top: 19px;
+  font-size: 15px;
+  text-align: center;
+  background-color: rgb(218, 243, 192);
+  border: none;
+}
+.AllWater__button:hover {
+  background-color: rgb(12, 245, 24);
+  border: none;
+}

@@ -1,0 +1,69 @@
+app.js
+===============================================================================
+import "./App.css";
+import React from "react";
+
+import { HeaderApp } from "./components/HeaderApp/HeaderApp";
+import { FishList } from "./components/FishList/FishList";
+import { Rating } from "./components/Rating/Rating";
+function App() {
+  return (
+    <div className="App">
+      <HeaderApp title="на крючке" />
+      <div className="App_mainInfo">
+        <div>
+          <Rating title="топ водоемов" />
+          <Rating title="топ рек" />
+        </div>
+        <FishList />
+      </div>
+    </div>
+  );
+}
+
+export default App;
+==============================================================================
+<div className="App">
+      <HeaderApp title="список всех водоемов и рек" />
+      <div>
+        <AllWaters />
+      </div>
+    </div>
+
+    ======================
+
+
+app.css
+.App {
+  height: 100vh;
+}
+.App_mainInfo {
+  height: 85%;
+  display: flex;
+  justify-content: space-around;
+}
+===============================
+{
+    "type": "lake or river",
+    "name": "",
+    "region": ["brest", "vitebsk", "grodno", "gomel", "mogilev", "minsk"],
+    "rating": 6.6,
+    "shortDescription": "",
+    "square": "площадь для озер",
+    "depth": "глубина для озер",
+    "length": "длина для рек",
+    "fullDescription": ""
+  }
+
+
+  <button
+            className={styles.AllWaters__regionButton}
+            onClick={() => {
+              const newWaters = allWaters.filter((item) =>
+                item.region.includes("vitebsk")
+              );
+              setWaters(newWaters);
+            }}
+          >
+            Витебская область
+          </button>
