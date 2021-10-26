@@ -25,19 +25,19 @@ export const WaterPage = () => {
       {currentWater ? (
         <div className={styles.waterWrapper}>
           <div className={styles.waterWrapper_name}>
-            Название: {currentWater.name}
+            Название: {currentWater.name}.
           </div>
           <div className={styles.waterWrapper_shortDescr}>
-            Краткое описание: {currentWater.shortDescription}
+            Краткое описание: {currentWater.shortDescription}.
           </div>
           <div className={styles.waterWrapper_square}>
-            Площадь: {currentWater.square}
+            Площадь: {currentWater.square} квадратных километров.
           </div>
           <div className={styles.waterWrapper_depth}>
-            Максимальная глубина: {currentWater.depth}
+            Максимальная глубина: {currentWater.depth} метров.
           </div>
           <div className={styles.waterWrapper_length}>
-            Длина: {currentWater.length}
+            Длина: {currentWater.length} километров.
           </div>
           <div className={styles.waterWrapper_fullDescr}>
             Полное описание: {currentWater.fullDescription}
