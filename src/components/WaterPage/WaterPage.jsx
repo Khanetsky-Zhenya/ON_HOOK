@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 import { ACTIONS } from "../../redux/constants";
@@ -22,13 +22,20 @@ export const WaterPage = () => {
 
   return (
     <div className={styles.waterPage}>
+      <Link className={styles.waterPage__nav} to="/">
+        <span>Главная</span>
+      </Link>
+      <span>/</span>
+      <Link className={styles.waterPage__nav2} to="/waters">
+        <span>Список всех водоемов и рек</span>
+      </Link>
       {currentWater ? (
         <div className={styles.waterWrapper}>
           <div className={styles.waterWrapper_name}>
             Название: {currentWater.name}.
           </div>
           <div className={styles.waterWrapper_shortDescr}>
-            Краткое описание: {currentWater.shortDescription}.
+            {currentWater.shortDescription}
           </div>
           <div className={styles.waterWrapper_square}>
             Площадь: {currentWater.square} квадратных километров.
