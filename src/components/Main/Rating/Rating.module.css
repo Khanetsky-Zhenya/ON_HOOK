@@ -15,4 +15,8 @@
   padding-top: 3px;
   margin-top: 4px;
   background-color: rgb(218, 243, 192);
+  cursor: pointer;
+}
+.Rating__name:hover {
+  background-color: rgb(187, 241, 129);
 }

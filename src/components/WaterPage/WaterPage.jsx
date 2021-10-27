@@ -12,7 +12,6 @@ export const WaterPage = () => {
   const currentWater = useSelector((state) => {
     return state.waters.find((water) => water.id === Number(id));
   });
-  console.log(currentWater);
 
   useEffect(() => {
     if (!currentWater) {
