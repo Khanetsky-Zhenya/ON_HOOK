@@ -13,6 +13,7 @@ export function RootRouter() {
   useEffect(() => {
     dispatch({ type: ACTIONS.GET_WATERS });
   }, []);
+
   return (
     <BrowserRouter>
       <>

@@ -16,10 +16,7 @@ export const Main = () => {
     oneTypeWaters.sort((a, b) => b.rating - a.rating);
     return oneTypeWaters.slice(0, 5);
   };
-  console.log(getTopWaters("river"));
 
-  /*const topLakes = null;
-  const topRivers = null;*/
   return (
     <>
       <HeaderApp title="на крючке" />
