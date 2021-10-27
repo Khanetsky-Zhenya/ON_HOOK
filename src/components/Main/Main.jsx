@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 import styles from "./Main.module.css";
@@ -7,6 +8,18 @@ import { FishList } from "./FishList/FishList";
 import { Rating } from "./Rating/Rating";
 
 export const Main = () => {
+  const allWaters = useSelector((state) => state.waters);
+  console.log(allWaters);
+
+  const getTopWaters = (type) => {
+    const oneTypeWaters = allWaters.filter((item) => item.type === type);
+    oneTypeWaters.sort((a, b) => b.rating - a.rating);
+    return oneTypeWaters.slice(0, 5);
+  };
+  console.log(getTopWaters("river"));
+
+  /*const topLakes = null;
+  const topRivers = null;*/
   return (
     <>
       <HeaderApp title="на крючке" />
@@ -17,8 +30,8 @@ export const Main = () => {
               Посмотреть все водоёмы
             </button>
           </Link>
-          <Rating title="топ водоемов" />
-          <Rating title="топ рек" />
+          <Rating title="топ водоемов" waters={getTopWaters("lake")} />
+          <Rating title="топ рек" waters={getTopWaters("river")} />
         </div>
         <FishList />
       </div>

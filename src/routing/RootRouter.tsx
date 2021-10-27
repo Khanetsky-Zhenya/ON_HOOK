@@ -1,10 +1,18 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import { AllWaters } from "../components/AllWaters/AllWaters";
 import { Main } from "../components/Main/Main";
 import { WaterPage } from "../components/WaterPage/WaterPage";
 
+import { ACTIONS } from "../redux/constants";
+
 export function RootRouter() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch({ type: ACTIONS.GET_WATERS });
+  }, []);
   return (
     <BrowserRouter>
       <>
