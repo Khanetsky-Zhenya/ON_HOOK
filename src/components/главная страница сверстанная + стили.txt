@@ -55,6 +55,19 @@ app.css
     "fullDescription": ""
   }
 
+  {
+    "id": 2,
+    "myRegion": "brest, vitebsk, grodno, gomel, mogilev, minsk",
+    "name": "",
+    "secondName": "",
+    "fishType": "удочка, фидер, спиннинг",
+    "trophy": "",
+    "totalCatch": "",
+    "favoriteFishingSpot": "",
+    "aboutMe": ""
+  }
+
+
 
   <button
             className={styles.AllWaters__regionButton}

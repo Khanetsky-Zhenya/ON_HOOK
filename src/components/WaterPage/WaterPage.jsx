@@ -32,7 +32,7 @@ export const WaterPage = () => {
       {currentWater ? (
         <div className={styles.waterWrapper}>
           <div className={styles.waterWrapper_name}>
-            Название: {currentWater.name}.
+            Название: {currentWater.name}
           </div>
           <div className={styles.waterWrapper_shortDescr}>
             {currentWater.shortDescription}

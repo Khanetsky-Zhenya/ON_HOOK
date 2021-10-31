@@ -11,8 +11,8 @@
   text-align: center;
   background-color: rgb(218, 243, 192);
   border: none;
+  cursor: pointer;
 }
 .AllWater__button:hover {
   background-color: rgb(12, 245, 24);
-  border: none;
 }
