@@ -9,7 +9,6 @@ import { Rating } from "./Rating/Rating";
 
 export const Main = () => {
   const allWaters = useSelector((state) => state.waters);
-  console.log(allWaters);
 
   const getTopWaters = (type) => {
     const oneTypeWaters = allWaters.filter((item) => item.type === type);

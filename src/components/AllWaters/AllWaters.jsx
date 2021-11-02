@@ -14,9 +14,6 @@ export const AllWaters = () => {
   const history = useHistory();
 
   const allWaters = useSelector((state) => state.waters);
-  useEffect(() => {
-    dispatch({ type: ACTIONS.GET_WATERS });
-  }, []);
 
   useEffect(() => {
     setWaters(allWaters);

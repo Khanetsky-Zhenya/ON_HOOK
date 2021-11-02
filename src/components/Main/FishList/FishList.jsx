@@ -12,7 +12,6 @@ export const FishList = () => {
 
 
   const allFishMans = useSelector((state) => state.fishMans);
-console.log(allFishMans)
 
   useEffect(() => {
     dispatch({ type: ACTIONS.GET_FISHMANS });
