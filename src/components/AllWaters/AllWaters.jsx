@@ -14,14 +14,8 @@ export const AllWaters = () => {
   const history = useHistory();
 
   const allWaters = useSelector((state) => state.waters);
-  const allFishMans = useSelector((state) => state.fishMans);
-console.log(allFishMans)
-
   useEffect(() => {
     dispatch({ type: ACTIONS.GET_WATERS });
-  }, []);
-  useEffect(() => {
-    dispatch({ type: ACTIONS.GET_FISHMANS });
   }, []);
 
   useEffect(() => {
