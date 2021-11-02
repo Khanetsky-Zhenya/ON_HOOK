@@ -22,6 +22,17 @@ console.log(allFishMans)
       <div className={styles.List__Header}>
         <h2 className={styles.List__Title}>топ рыболовов</h2>
         <p className={styles.List__SubTitle}>витебской области</p>
+        <label>
+          <input type="checkbox" /> Выберете область
+          <select class=""  > Выберете область
+            <option>брестской области</option>
+            <option>витебской области</option>      
+            <option>гродненской области</option>
+            <option>гомельской области</option>
+            <option>могилевской области</option>      
+            <option>минской области</option>
+          </select>
+        </label>
       </div>
       <div className={styles.List__UserTop}>
         <div>
