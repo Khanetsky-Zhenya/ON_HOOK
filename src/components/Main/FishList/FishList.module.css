@@ -10,9 +10,11 @@
 }
 .List__UserTop {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   height: 424px;
 }
-.List__UserTopFlex{
+.List__UserTopFlex {
   display: flex;
 }
