@@ -13,3 +13,6 @@
 
   height: 424px;
 }
+.List__UserTopFlex{
+  display: flex;
+}
