@@ -5,7 +5,7 @@
 .Card {
   display: flex;
   width: 45%;
-  height: 130px;
+  height: 125px;
   border: 1px solid rgb(0, 0, 0);
   margin: 7px;
   background-color: #f8f7f2;

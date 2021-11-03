@@ -6,10 +6,12 @@
   margin: 25px auto 0;
   width: 90%;
   height: 500px;
-  background-color: rgb(100, 100, 100);
+
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .AllWaters__navMain {
   margin: 15px 5px 0 20px;
+  font-size: 16px;
   text-decoration: none;
   background: none;
   border: none;
@@ -22,12 +24,12 @@
 .AllWaters__nav {
   margin: 15px 0 0 5px;
   background: none;
+  text-decoration: none;
   border: none;
-  cursor: pointer;
+  color: black;
+  font-size: 14px;
 }
-.AllWaters__nav:hover {
-  color: rgb(143, 129, 230);
-}
+
 .AllWaters__searchFlex {
   display: flex;
   justify-content: center;
@@ -49,12 +51,12 @@
   right: 3px;
   font-size: 14px;
   font-weight: 600;
-  background: #f16b54;
+  background: #7156af;
   border: none;
   cursor: pointer;
 }
 .AllWaters__inputButton:hover {
-  background: #fa4424;
+  background: #9d56af;
 }
 .AllWaters__regionAllButton {
   margin: 20px auto;
@@ -70,16 +72,16 @@
   cursor: pointer;
 }
 .AllWaters__regionButton:hover {
-  color: rgb(143, 129, 230);
+  color: #4085ca;
 }
 .AllWaters__regionButton:focus {
-  color: rgb(230, 7, 182);
+  color: rgb(163, 59, 223);
 }
 .AllWaters__Allwaters {
   margin: 0 auto;
   width: 89.5%;
   height: 320px;
-  background: rgb(231, 111, 205);
+  background-color: #f8f7f2;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
@@ -93,25 +95,25 @@
   padding-top: 8px;
   width: 220px;
   height: 32px;
-  background: rgb(92, 92, 92);
+  background: #dfe6f0;
 }
 .AllWaters__waters:hover {
-  background: rgb(71, 50, 50);
+  background: #5f91c2;
   cursor: pointer;
 }
 /*стили для скрола*/
 .AllWaters__Allwaters::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
   height: 20px;
 }
 .AllWaters__Allwaters::-webkit-scrollbar-thumb {
   /*border-radius: 50px;*/
-  background-color: rgba(250, 12, 12, 0.295);
+  background-color: rgba(114, 161, 248, 0.295);
 }
 .AllWaters__Allwaters::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(250, 52, 52);
+  background-color: rgba(0, 89, 255, 1);
 }
 .AllWaters__Allwaters::-webkit-scrollbar-track {
-  background-color: rgb(53, 53, 53);
+  background-color: #f8f7f2;
   /*border-radius: 40px;*/
 }

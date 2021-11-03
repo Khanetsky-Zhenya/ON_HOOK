@@ -40,7 +40,7 @@ export const AllWaters = () => {
           </Link>
           <span>/</span>
           <button className={styles.AllWaters__nav}>
-            Список всех водоемов и рек
+            <span>Список всех водоемов и рек</span>
           </button>
         </div>
         <div className={styles.AllWaters__searchFlex}>
