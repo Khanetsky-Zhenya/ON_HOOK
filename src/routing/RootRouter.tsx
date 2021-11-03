@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { AllWaters } from "../components/AllWaters/AllWaters";
 import { Main } from "../components/Main/Main";
 import { WaterPage } from "../components/WaterPage/WaterPage";
+import { HeaderApp } from "../components/HeaderApp/HeaderApp";
 
 import { ACTIONS } from "../redux/constants";
 
@@ -25,7 +26,8 @@ export function RootRouter() {
             <AllWaters />
           </Route>
           <Route path="/waters/:id">
-            <WaterPage />
+          <HeaderApp title="на крючке" />
+          <WaterPage />
           </Route>
           <Route exact path="/register"></Route>
           <Route exact path="/posts/:id"></Route>

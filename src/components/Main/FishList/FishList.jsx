@@ -21,10 +21,10 @@ export const FishList = () => {
 
   const onFilter = (e) => {
     const myRegion = e.target.value;
-    const newFishMans = allFishMans.filter((item) => {
-      return item.myRegion.includes(myRegion);
-    });
-    setFishMans(newFishMans);
+    const newFishMans = allFishMans.filter((item) =>  item.myRegion.includes(myRegion));
+    newFishMans.sort((a, b) => b.totalCatch - a.totalCatch);
+    const topFishmans = newFishMans.slice(0, 6);
+    setFishMans(topFishmans);
   };
 
   return (

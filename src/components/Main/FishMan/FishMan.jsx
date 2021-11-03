@@ -1,11 +1,6 @@
 import React from "react";
 
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-
-import { ACTIONS } from "../../../redux/constants";
 import images from "../../../services/images";
-
 import styles from "./FishMan.module.css";
 
 export const FishMan = ({ fishmans }) => {
