@@ -2,24 +2,8 @@
   width: 832px;
   margin: 20px;
   padding: 20px 35px 20px 35px;
-  background-color: rgb(163, 163, 163);
-  overflow: auto;
-}
-/*стили для скрола*/
-.List::-webkit-scrollbar {
-  width: 6px;
-  height: 20px;
-}
-.List::-webkit-scrollbar-thumb {
-  /*border-radius: 50px;*/
-  background-color: rgba(250, 12, 12, 0.295);
-}
-.List::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(250, 52, 52);
-}
-.List::-webkit-scrollbar-track {
-  background-color: rgb(53, 53, 53);
-  /*border-radius: 40px;*/
+  background-color: #f8f7f2;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .List__Header {
@@ -30,8 +14,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  overflow: auto;
   height: 424px;
+}
+/*стили для скрола*/
+.List__UserTop::-webkit-scrollbar {
+  width: 6px;
+  height: 20px;
+}
+.List__UserTop::-webkit-scrollbar-thumb {
+  /*border-radius: 50px;*/
+  background-color: rgba(250, 12, 12, 0.295);
+}
+.List__UserTop::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(250, 52, 52);
+}
+.List__UserTop::-webkit-scrollbar-track {
+  background-color: rgb(53, 53, 53);
+  /*border-radius: 40px;*/
 }
 .List__UserTopFlex {
   display: flex;

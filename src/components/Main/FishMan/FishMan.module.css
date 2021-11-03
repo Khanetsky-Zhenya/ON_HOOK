@@ -8,6 +8,7 @@
   height: 130px;
   border: 1px solid rgb(0, 0, 0);
   margin: 7px;
+  background-color: #f8f7f2;
 }
 .Card__FullName {
   display: flex;
