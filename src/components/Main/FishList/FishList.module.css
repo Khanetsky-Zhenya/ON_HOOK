@@ -30,7 +30,7 @@
   background-color: rgba(0, 89, 255, 0.45);
 }
 .List__UserTop::-webkit-scrollbar-track {
-  background-color: #f7f1ce;
+  background-color: #ddd9c2;
   /*border-radius: 40px;*/
 }
 .List__UserTopFlex {

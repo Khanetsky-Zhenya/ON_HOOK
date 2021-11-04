@@ -1,8 +1,12 @@
 .Rating {
   margin: 20px 0px 0px 0px;
   padding: 10px;
+  width: 240px;
   background-color: #ffffff;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .Rating__title {
   text-align: center;
@@ -19,10 +23,10 @@
   cursor: pointer;
 }
 .Rating__name:hover {
+  width: 240px;
   background-color: #7156af;
+  font-size: 18px;
+  color: #ffffff;
 
-  color: #384b60;
-  color: #5f91c2;
-  color: #c0dafb;
-  color: #f8f7f2;
+
 }

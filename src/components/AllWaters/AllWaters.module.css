@@ -11,15 +11,21 @@
 }
 .AllWaters__navMain {
   margin: 15px 5px 0 20px;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   background: none;
   border: none;
   cursor: pointer;
   color: black;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
 }
 .AllWaters__navMain:hover {
-  color: rgb(143, 129, 230);
+  background-size: 100% 2px;
+  color:  #203e61;
 }
 .AllWaters__nav {
   margin: 15px 0 0 5px;
@@ -27,7 +33,7 @@
   text-decoration: none;
   border: none;
   color: black;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .AllWaters__searchFlex {
@@ -98,6 +104,7 @@
   background: #dfe6f0;
 }
 .AllWaters__waters:hover {
+   text-transform: uppercase;
   background: #5f91c2;
   cursor: pointer;
 }
@@ -111,9 +118,9 @@
   background-color: rgba(114, 161, 248, 0.295);
 }
 .AllWaters__Allwaters::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 89, 255, 1);
+  background-color: rgba(0, 89, 255, 0.45);
 }
 .AllWaters__Allwaters::-webkit-scrollbar-track {
-  background-color: #f8f7f2;
+  background-color: #ddd9c2;
   /*border-radius: 40px;*/
 }

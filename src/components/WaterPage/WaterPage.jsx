@@ -29,6 +29,10 @@ export const WaterPage = () => {
       <Link className={styles.waterPage__nav2} to="/waters">
         <span>Список всех водоемов и рек</span>
       </Link>
+      <span>/</span>
+      <span className={styles.waterPage__nav3}>
+        <span>{currentWater.name}</span>
+      </span>
       {currentWater ? (
         <div className={styles.waterWrapper}>
           <div className={styles.waterWrapper_name}>
