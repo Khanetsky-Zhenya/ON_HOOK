@@ -2,8 +2,10 @@
   width: 55%;
   margin: 20px;
   padding: 20px 40px 20px 40px;
-  background-color: #f8f7f2;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  /*background-color: #f8f7f2;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);*/
+  background-color: rgb(173 210 235 / 43%);;
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
 }
 
 .List__Header {
@@ -30,7 +32,7 @@
   background-color: rgba(0, 89, 255, 0.45);
 }
 .List__UserTop::-webkit-scrollbar-track {
-  background-color: #ddd9c2;
+  background-color: #c2d3dd;
   /*border-radius: 40px;*/
 }
 .List__UserTopFlex {

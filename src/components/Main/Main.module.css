@@ -3,17 +3,20 @@
   justify-content: space-around;
 }
 .AllWater__button {
-  width: 280px;
-  height: 32px;
+  width: 580px;
+  height: 40px;
   margin-top: 19px;
-  font-size: 15px;
+
+  font-size: 18px;
   text-align: center;
-  background-color: #c0dafb;
-  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  border: 3px solid #7156af;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 .AllWater__button:hover {
-  background: rgba(0, 0, 0, 0);
-  box-shadow: inset 0 0 0 3px #7156af;
+  background-color: #a5cafa;
+  border: none;
 }

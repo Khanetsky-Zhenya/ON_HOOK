@@ -23,7 +23,7 @@ export const Main = () => {
         <div>
           <Link to="/waters">
             <button className={styles.AllWater__button}>
-              Посмотреть все водоёмы
+              Посмотреть  все  водоёмы
             </button>
           </Link>
           <Rating title="топ водоемов" waters={getTopWaters("lake")} />

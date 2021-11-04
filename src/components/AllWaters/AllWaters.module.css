@@ -94,7 +94,7 @@
   margin: 0 auto;
   width: 89.5%;
   height: 320px;
-  background-color: #f8f7f2;
+ /* background-color: #f8f7f2;*/
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 

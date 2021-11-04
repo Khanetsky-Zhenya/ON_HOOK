@@ -14,8 +14,12 @@ export const Rating = (props) => {
   };
   return (
     <div className={styles.Rating}>
-      <h2 className={styles.Rating__title}>{title}</h2>
-      {waters.map((item) => {
+      <div className={styles.Rating_new}>
+        <h2 className={styles.Rating__title}>{title}</h2>
+        <div className={styles.Rating__separator}></div>
+        <p className={styles.Rating__subTitle}>В этом блоке собран {title} с самыми высокими рейтингами по улову и популярности. Рейтинг создается благодаря рыбакам, которые оставляют отзывы и результаты своих уловов.</p>
+      </div>
+      <div className={styles.Rating_itemsAll}>{waters.map((item) => {
         return (
           <div
             className={styles.Rating__name}
@@ -24,7 +28,8 @@ export const Rating = (props) => {
             {item.name}
           </div>
         );
-      })}
+      })}</div>
+      
     </div>
   );
 };
