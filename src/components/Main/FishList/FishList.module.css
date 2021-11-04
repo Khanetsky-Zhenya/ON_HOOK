@@ -1,23 +1,21 @@
 .List {
-  width: 55%;
-  margin: 20px;
-  padding: 20px 40px 20px 40px;
-  /*background-color: #f8f7f2;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);*/
-  background-color: rgb(173 210 235 / 43%);;
+  height: 79.5vh;
+  background-color: rgb(173 210 235 / 43%);
   box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
 }
 
 .List__Header {
   text-align: center;
   text-transform: uppercase;
+  padding: 10px 0 10px 0;
+  height: 8vh;
 }
 .List__UserTop {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   overflow: auto;
-  height: 424px;
+  height: 67vh;
 }
 /*стили для скрола*/
 .List__UserTop::-webkit-scrollbar {

@@ -4,7 +4,7 @@
 }
 .Card {
   display: flex;
-  width: 45%;
+  width: 47%;
   height: 125px;
   border: 1px solid rgb(0, 0, 0);
   margin: 7px;
@@ -20,7 +20,6 @@
 }
 .Card__FullName {
   margin-top: 12px;
-  margin-left: 35px;
   font-size: 18px;
   font-weight: 500;
 }

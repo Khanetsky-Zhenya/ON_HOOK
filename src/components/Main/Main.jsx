@@ -20,16 +20,18 @@ export const Main = () => {
     <>
       <HeaderApp title="на крючке" />
       <div className={styles.mainInfo}>
-        <div>
+        <div className={styles.mainInfo_left}>
           <Link to="/waters">
             <button className={styles.AllWater__button}>
-              Посмотреть  все  водоёмы
+              Посмотреть все водоёмы
             </button>
           </Link>
           <Rating title="топ водоемов" waters={getTopWaters("lake")} />
           <Rating title="топ рек" waters={getTopWaters("river")} />
         </div>
-        <FishList />
+        <div className={styles.mainInfo_right}>
+          <FishList />
+        </div>
       </div>
     </>
   );

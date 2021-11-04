@@ -21,11 +21,11 @@
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
-  transition: background-size .3s;
+  transition: background-size 0.3s;
 }
 .AllWaters__navMain:hover {
   background-size: 100% 2px;
-  color:  #203e61;
+  color: #203e61;
 }
 .AllWaters__nav {
   margin: 15px 0 0 5px;
@@ -71,7 +71,7 @@
   justify-content: space-between;
 }
 .AllWaters__regionButton {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   background: none;
   border: none;
@@ -80,7 +80,7 @@
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
-  transition: background-size .2s;
+  transition: background-size 0.2s;
 }
 
 .AllWaters__regionButton:hover {
@@ -92,9 +92,9 @@
 }
 .AllWaters__Allwaters {
   margin: 0 auto;
-  width: 89.5%;
+  width: 91.25%;
   height: 320px;
- /* background-color: #f8f7f2;*/
+  /* background-color: #f8f7f2;*/
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
@@ -111,7 +111,7 @@
   background: #dfe6f0;
 }
 .AllWaters__waters:hover {
-   text-transform: uppercase;
+  text-transform: uppercase;
   background: #5f91c2;
   cursor: pointer;
 }
