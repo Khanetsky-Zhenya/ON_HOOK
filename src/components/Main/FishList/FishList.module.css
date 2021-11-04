@@ -1,7 +1,7 @@
 .List {
-  width: 832px;
+  width: 55%;
   margin: 20px;
-  padding: 20px 35px 20px 35px;
+  padding: 20px 40px 20px 40px;
   background-color: #f8f7f2;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }

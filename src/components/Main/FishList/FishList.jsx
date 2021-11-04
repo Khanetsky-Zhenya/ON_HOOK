@@ -23,8 +23,7 @@ export const FishList = () => {
     const myRegion = e.target.value;
     const newFishMans = allFishMans.filter((item) =>  item.myRegion.includes(myRegion));
     newFishMans.sort((a, b) => b.totalCatch - a.totalCatch);
-    const topFishmans = newFishMans.slice(0, 6);
-    setFishMans(topFishmans);
+    setFishMans(newFishMans);
   };
 
   return (
