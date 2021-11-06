@@ -16,14 +16,24 @@ export const FishList = () => {
   }, []);
 
   useEffect(() => {
-    setFishMans(allFishMans);
+    setFishMans(getSorted(allFishMans));
   }, [allFishMans]);
+
+  const getSorted = (fishMans) => {
+    fishMans.sort((a, b) => b.totalCatch - a.totalCatch);
+    return fishMans;
+  };
 
   const onFilter = (e) => {
     const myRegion = e.target.value;
-    const newFishMans = allFishMans.filter((item) =>  item.myRegion.includes(myRegion));
-    newFishMans.sort((a, b) => b.totalCatch - a.totalCatch);
-    setFishMans(newFishMans);
+    if (myRegion === "all") {
+      setFishMans(getSorted(allFishMans));
+    } else {
+      const newFishMans = allFishMans.filter((item) =>
+        item.myRegion.includes(myRegion)
+      );
+      setFishMans(getSorted(newFishMans));
+    }
   };
 
   return (
@@ -31,7 +41,9 @@ export const FishList = () => {
       <div className={styles.List__Header}>
         <h2 className={styles.List__Title}>топ рыболовов</h2>
         <select onChange={onFilter}>
-          <option className={styles.List__SubTitle}>Выберете область:</option>
+          <option className={styles.List__SubTitle} value="all">
+            Выберете область:
+          </option>
           <option value="brest">Брестская область</option>
           <option value="vitebsk">Витебская область</option>
           <option value="grodno">Гродненская область</option>
