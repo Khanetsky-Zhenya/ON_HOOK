@@ -36,3 +36,6 @@
 .List__UserTopFlex {
   display: flex;
 }
+.List__SubTitle:hover {
+  cursor: pointer;
+}

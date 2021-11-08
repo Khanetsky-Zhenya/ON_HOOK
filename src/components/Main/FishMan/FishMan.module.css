@@ -4,19 +4,19 @@
 }
 .Card {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 46%;
-  padding: 10px 10px;
+  padding: 5px 5px 5px 5px;
   /*height: 125px;*/
   /*border: 1px solid rgb(0, 0, 0);*/
   margin: 7px;
   background-color: #f5f0db;
   border-radius: 10px;
 }
-.CardL{
+.CardL {
   width: 25%;
 }
-.CardR{
+.CardR {
   width: 70%;
 }
 .Card__FullName {
@@ -28,6 +28,7 @@
   width: 80px;
   height: 80px;
   margin: 25px 20px 0 20px;
+  padding-right: 5px;
 }
 .Card__FullName {
   font-size: 18px;
@@ -36,42 +37,42 @@
 .Card__Name {
   margin-right: 10px;
 }
-.Card__Achiev_groupall{
+.Card__Achiev_groupall {
   font-size: 14px;
   font-weight: 400;
 }
-.Card__Achiev_groupUserdata{
+.Card__Achiev_groupUserdata {
   margin-top: 5px;
   font-size: 15px;
   font-weight: 500;
 }
-.Card__Achiev{
+.Card__Achiev {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 100%;
 }
-.Card__Achiev_group1{
+.Card__Achiev_group1 {
   width: 33%;
   padding: 15px 0;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 10px;
   text-align: center;
 }
-.Card__Achiev_group2{
+.Card__Achiev_group2 {
   width: 28%;
   padding: 15px 0;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 10px;
   text-align: center;
 }
-.Card__Achiev_group3{
+.Card__Achiev_group3 {
   width: 28%;
   padding: 15px 0;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 10px;
   text-align: center;
 }
-.Card__Achiev_groupBorder{
+.Card__Achiev_groupBorder {
   width: 1px;
   background-color: rgb(0, 0, 0);
 }

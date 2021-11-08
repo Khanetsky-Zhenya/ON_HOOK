@@ -40,10 +40,8 @@ export const FishList = () => {
     <div className={styles.List}>
       <div className={styles.List__Header}>
         <h2 className={styles.List__Title}>топ рыболовов</h2>
-        <select onChange={onFilter}>
-          <option className={styles.List__SubTitle} value="all">
-            Выберете область:
-          </option>
+        <select className={styles.List__SubTitle} onChange={onFilter}>
+          <option value="all">Выберете область:</option>
           <option value="brest">Брестская область</option>
           <option value="vitebsk">Витебская область</option>
           <option value="grodno">Гродненская область</option>
