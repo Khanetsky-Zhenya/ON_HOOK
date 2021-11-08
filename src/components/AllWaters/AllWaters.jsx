@@ -20,6 +20,7 @@ export const AllWaters = () => {
   }, [allWaters]);
 
   const [waters, setWaters] = useState(allWaters);
+ 
 
   const onFilter = (region) => {
     const newWaters = allWaters.filter((item) => item.region.includes(region));
@@ -29,6 +30,16 @@ export const AllWaters = () => {
   const redirectToWater = (id) => {
     history.push(`/waters/${id}`);
   };
+
+  const [text, setText] = useState('');
+
+  const waterSearch=(e)=>{
+    const text = (e.target.value.toLowerCase())
+    const searchWaters = allWaters.filter((item) => item.name.toLowerCase().includes(text))
+    setText(setWaters(searchWaters));
+
+  }
+
 
   return (
     <>
@@ -47,7 +58,8 @@ export const AllWaters = () => {
           <form className={styles.AllWaters__form}>
             <input
               className={styles.AllWaters__input}
-              type="text"
+              value={text}
+              onChange={waterSearch}             
               placeholder="Искать здесь..."
             />
             <button className={styles.AllWaters__inputButton} type="submit">

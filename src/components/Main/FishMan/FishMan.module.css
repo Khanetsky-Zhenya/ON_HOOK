@@ -5,8 +5,9 @@
 .Card {
   display: flex;
   justify-content: space-evenly;
-  width: 47%;
-  height: 125px;
+  width: 46%;
+  padding: 10px 10px;
+  /*height: 125px;*/
   /*border: 1px solid rgb(0, 0, 0);*/
   margin: 7px;
   background-color: #f5f0db;

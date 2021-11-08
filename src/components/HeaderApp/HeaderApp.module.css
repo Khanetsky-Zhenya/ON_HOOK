@@ -9,10 +9,10 @@
   justify-content: center;
 }
 .header_mainR .header_mainL{
-  width: 33%;
+  width: 30%;
 }
 .header {
-  width: 33%;
+  width: 36%;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
