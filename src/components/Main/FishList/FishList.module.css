@@ -1,5 +1,5 @@
 .List {
-  height: 79.5vh;
+  height: 78vh;
   background-color: rgb(173 210 235 / 23%);
   box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
 }
@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   justify-content: center;
   overflow: auto;
-  height: 67vh;
+  height: 65vh;
 }
 /*стили для скрола*/
 .List__UserTop::-webkit-scrollbar {
@@ -42,13 +42,13 @@
 .List__SubTitle:hover {
   cursor: pointer;
 }
-.List__input{
+.List__input {
   width: 250px;
   padding: 3px 3px;
   font-size: 12px;
   color: #000000;
 }
-.List__FormSearch{
+.List__FormSearch {
   display: flex;
   justify-content: space-between;
   padding: 5px 50px;
