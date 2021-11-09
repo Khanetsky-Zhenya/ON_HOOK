@@ -36,6 +36,18 @@
 .List__UserTopFlex {
   display: flex;
 }
+.List__SubTitle {
+  width: 30%;
+}
 .List__SubTitle:hover {
   cursor: pointer;
+}
+.List__input{
+  width: 250px;
+  padding: 3px 3px ;
+}
+.List__FormSearch{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px;
 }
