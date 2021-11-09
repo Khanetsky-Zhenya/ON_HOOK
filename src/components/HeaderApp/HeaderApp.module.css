@@ -45,6 +45,5 @@
 }
 .header__logo {
   background-image: url("../../assets/images/logo.png");
-  /* background-size: 3%, 25%, 25%;*/
   background-repeat: no-repeat;
 }

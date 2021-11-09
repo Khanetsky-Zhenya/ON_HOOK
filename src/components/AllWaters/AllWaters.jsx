@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import { useHistory } from "react-router";
 
 import { HeaderApp } from "../HeaderApp/HeaderApp";
-import { ACTIONS } from "../../redux/constants";
-
 import styles from "./AllWaters.module.css";
 
 export const AllWaters = () => {
@@ -20,7 +18,6 @@ export const AllWaters = () => {
   }, [allWaters]);
 
   const [waters, setWaters] = useState(allWaters);
- 
 
   const onFilter = (region) => {
     const newWaters = allWaters.filter((item) => item.region.includes(region));
@@ -31,15 +28,15 @@ export const AllWaters = () => {
     history.push(`/waters/${id}`);
   };
 
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
 
-  const waterSearch=(e)=>{
-    const text = (e.target.value.toLowerCase())
-    const searchWaters = allWaters.filter((item) => item.name.toLowerCase().includes(text))
+  const waterSearch = (e) => {
+    const text = e.target.value.toLowerCase();
+    const searchWaters = allWaters.filter((item) =>
+      item.name.toLowerCase().includes(text)
+    );
     setText(setWaters(searchWaters));
-
-  }
-
+  };
 
   return (
     <>
@@ -59,12 +56,9 @@ export const AllWaters = () => {
             <input
               className={styles.AllWaters__input}
               value={text}
-              onChange={waterSearch}             
-              placeholder="Искать здесь..."
+              onChange={waterSearch}
+              placeholder="здесь можно найти любой водоем по названию..."
             />
-            <button className={styles.AllWaters__inputButton} type="submit">
-              поиск
-            </button>
           </form>
         </div>
         <div className={styles.AllWaters__regionAllButton}>
