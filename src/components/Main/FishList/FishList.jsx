@@ -64,7 +64,7 @@ export const FishList = () => {
               className={styles.List__input}
               value={text}
               onChange={fishManSearch}             
-              placeholder="поиск рыбаков по фамилии и улову"
+              placeholder="поиск рыбаков по фамилии и трофею.."
             />
         </form>
       </div>

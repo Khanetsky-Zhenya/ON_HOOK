@@ -44,10 +44,13 @@
 }
 .List__input{
   width: 250px;
-  padding: 3px 3px ;
+  padding: 3px 3px;
+  font-size: 12px;
+  color: #000000;
 }
 .List__FormSearch{
   display: flex;
   justify-content: space-between;
   padding: 5px 50px;
+  font-size: 18px;
 }

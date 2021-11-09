@@ -29,9 +29,6 @@ export function RootRouter() {
           <HeaderApp title="на крючке" />
           <WaterPage />
           </Route>
-          <Route exact path="/register"></Route>
-          <Route exact path="/posts/:id"></Route>
-          <Route exact></Route>
         </Switch>
       </>
     </BrowserRouter>
